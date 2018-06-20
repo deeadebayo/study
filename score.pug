@@ -5,8 +5,34 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Score Keeper App
         link(rel="stylesheet" href="/../public/css/style.css")
-        script(src="assets/js/score-script.js")
+        style(type="text/css").
+            .winner {
+                color: green;
+            }
     body
+        .row
+            .col
+                h2 Just a Simple ScoreKeeper App
+        br
+        br
+        .row
+            .col.text-center
+                h2#player1score 0
+            .col.text-center
+                h2#player2score 0
+        .row
+            .col.text-center
+                p.
+                    Playing to: <span id="max-points">5</span>
+        .row
+            .col.text-center
+                input#score-text(type="number", name="score", placeholder="What are we playing to?")
+                button#btn-1.btn-lg Player One
+                button#btn-2.btn-lg Player Two
+                button#btn-reset.btn-lg Reset
+        script(src="assets/js/score-script.js")
+
+
       
 
 
