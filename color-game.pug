@@ -1,0 +1,20 @@
+extends assets/pug-templates/layout.pug
+block beglink
+    - var pageTitle = "Color Game";
+    meta(name="description" content="SEO stuff")
+block endlink
+    link(rel="stylesheet" href="assets/css/color-game.css")
+block content
+    .container
+        h1 The Great RGB Color Game
+        .row
+            .col
+                .square
+                .square
+                .square
+        .row
+            .col
+                .square
+                .square
+                .square
+    script(src="assets/js/color-script.js")
