@@ -5,16 +5,24 @@ block beglink
 block endlink
     link(rel="stylesheet" href="assets/css/color-game.css")
 block content
-    .container
-        h1 The Great RGB Color Game
-        .row
+    .fluid-container.header
+        .container
+            h1 The Great <span id="colorDisplay"></span> RGB Color Game
+        .row.text-center.stripe
             .col
-                .square
-                .square
-                .square
-        .row
+                btn#reset.btn.btn-lg New Colors
             .col
-                .square
-                .square
-                .square
+                span#message
+            .col
+        .container
+            .row
+                .col
+                    .square
+                    .square
+                    .square
+            .row
+                .col
+                    .square
+                    .square
+                    .square
     script(src="assets/js/color-script.js")
