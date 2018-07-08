@@ -1,5 +1,8 @@
+$header--color: #3c74ae;
+
 body {
     background-color: #232323;
+    font-family: "Montserrat", "Avenir";
 }
 
 .square {
@@ -8,19 +11,61 @@ body {
     padding-bottom: 30%;
     float: left;
     margin: 1.66%;
+    border-radius: 30px;
+    transition: background .6s;
 }
 
 .stripe {
-    background: blue;
-    height: 5vh;
+    background: white;
+    // height: 5vh;
     margin: 0 auto;
+    padding: 0 auto;
+    color: $header--color;
 
     btn {
+        color: $header--color;
+        border-radius: 0;
+        font-size: 1.45em;
+        text-transform: uppercase;
+        transition: all .3s;
 
+        &:hover {
+            background: $header--color;
+            color: white;
+            border-radius: 0;
+        }
+    }
+
+    .selected {
+        background: $header--color;
+        color: white;
+    }
+
+    #message {
+        font-size: 1.45em;
+        display: inline-block;
+        height: 100%;
     }
 }
 
+#firstSquares {
+    margin-top: 20px;
+}
+
 ////////////TYPOGRAPHY
-h1 {
+.header {
     color: white;
+    background: $header--color;
+    padding: 1.65em 0;
+    text-transform: uppercase;
+    line-height: 1.1;
+
+    h1 {
+        font-weight: 400;
+        font-size: 4em;
+    }
+
+    h2 {
+        font-weight: 300;
+    }
 }

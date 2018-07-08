@@ -5,24 +5,32 @@ block beglink
 block endlink
     link(rel="stylesheet" href="assets/css/color-game.css")
 block content
-    .fluid-container.header
+    .header.container-fluid
         .container
-            h1 The Great <span id="colorDisplay"></span> RGB Color Game
-        .row.text-center.stripe
-            .col
-                btn#reset.btn.btn-lg New Colors
-            .col
-                span#message
-            .col
+            .row.text-center
+                .col
+                    h2 THE GREAT <br>
+                    h1 <span id="colorDisplay"></span> <br>
+                    h2 GUESSING GAME
+    .container-fluid.stripe
         .container
-            .row
+            .row.text-center
                 .col
-                    .square
-                    .square
-                    .square
-            .row
+                    btn.resetBtn.btn New Colors
                 .col
-                    .square
-                    .square
-                    .square
+                     btn.btn#message
+                .col
+                    btn.mode.btn Easy
+                    btn.mode.btn.selected Hard
+    .container
+        .row#firstSquares
+            .col
+                .square
+                .square
+                .square
+        .row#secondSquares
+            .col
+                .square
+                .square
+                .square
     script(src="assets/js/color-script.js")
