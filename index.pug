@@ -17,7 +17,7 @@ html(lang="en")
         h1 Goodbye
         ul
             li#highlight List Item 1
-            li.bolded List Item 2
+            li.bolded <a href="http://www.google.com">List Item 2</a>
             li.bolded List Item 3
         p getElementById - singular
         p getElementsByClassName - singluar, but not an array but a node list (javascript objects, not html strings)
@@ -25,11 +25,14 @@ html(lang="en")
         p querySelector - only selects the first match. Only returns one element
         p querySelecterAll - same as above, returns all matching elements
         br
+        div Div 1
+        .highlight Div 2
+        #third Div 3
+        .highlight Div 4
         p classList
         p textContent
         p innerHTML
         p getAttribute and setAttribute
 
-        //element.addEventListener(type, funcToCall);
-
+        script(src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous")
 
